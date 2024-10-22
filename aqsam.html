@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اختر ما تريد</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      ul {
+        list-style: none;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 10px;
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.696),
+            rgba(0, 0, 0, 0.315)
+          ),
+          url(/img/home_bg.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: #4caf50;
+        color: rgb(82, 82, 82);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .box:hover {
+        background-color: #45a049;
+      }
+      #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+      }
+
+      #navbar img {
+        width: 80px;
+        margin-left: 100px;
+      }
+
+      nav ul {
+        display: flex;
+        margin-right: 100px;
+      }
+
+      nav ul li a {
+        padding: 15px 20px;
+        font-weight: 600;
+      }
+
+      nav ul li a:hover {
+        border-bottom: 2px solid #7a2303;
+      }
+
+      /* .Card {
+        background-color: #381354e2;
+        width: 30%;
+        height: 400px;
+        padding: 12px;
+        margin: 8px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border: 2px solid whitesmoke;
+        cursor: pointer;
+      } */
+
+      .Card:hover {
+        border: 2px solid rgb(226, 37, 255);
+        background-color: #8555bcad;
+      }
+
+      .Card a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.4rem;
+      }
+
+      .ContainerCard {
+        display: flex;
+        flex-wrap: wrap; /* يسمح بتوزيع البطاقات على عدة أسطر */
+        justify-content: center; /* مركزية البطاقات */
+      }
+
+      .Card {
+        background-color: #381354e2;
+        width: 30%; /* يمكن تعديل هذا العرض حسب الحاجة */
+        height: 400px;
+        padding: 12px;
+        margin: 8px;
+        border-radius: 10px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border: 2px solid whitesmoke;
+        cursor: pointer;
+      }
+
+      #ektar {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+      }
+
+      .quran {
+        text-align: center;
+        margin-top: 155px;
+        font-size: 55px;
+        color: #ff53eb;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div id="navbar">
+      <img src="./img/logo.png" alt="Food Lover Logo" />
+      <nav role="navigation">
+        <ul>
+          <li><a href="/index.html">الرئيسيه</a></li>
+          <li><a href="#about">فكرة المشروع</a></li>
+          <li><a href="#offers">ميزتنا</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Header End -->
+
+    <h1 id="ektar">اختر ما تريده💡</h1>
+
+    <!-- animation -->
+    <div class="ContainerCard">
+      <div class="Card">
+        <a href="/"><h2 class="quran">العلماء</h2></a>
+        <br />
+      </div>
+
+      <div class="Card">
+        <a href="/"><h2 class="quran">الدوال</h2></a>
+        <br />
+      </div>
+
+      <div class="Card">
+        <a href="/"><h2 class="quran">الأشكال الهندسيه</h2></a>
+        <br />
+      </div>
+      <div class="Card">
+        <a href="/"><h2 class="quran">الإحصاء</h2></a>
+        <br />
+      </div>
+      <div class="Card">
+        <a href="/"><h2 class="quran">الجبر</h2></a>
+        <br />
+      </div>
+      <div class="Card">
+        <a href="/"><h2 class="quran">التفاضل والتكامل</h2></a>
+        <br />
+      </div>
+      <div class="Card">
+        <a href="/"><h2 class="quran">الهندسه</h2></a>
+        <br />
+      </div>
+      <div class="Card">
+        <a href="/"><h2 class="quran">المسائل</h2></a>
+        <br />
+      </div>
+      <div class="Card">
+        <a href="/"><h2 class="quran">تطبيقات</h2></a>
+        <br />
+      </div>
+    </div>
+
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script>
+      window.__ow = window.__ow || {};
+      window.__ow.organizationId = "8b7518d7-77f5-46b0-8d0c-6dd29ed24508";
+      window.__ow.template_id = "ae008191-f5d3-4f9f-a672-1f59286d996b";
+      window.__ow.integration_name = "manual_settings";
+      window.__ow.product_name = "chatbot";
+      (function (n, t, c) {
+        function i(n) {
+          return e._h ? e._h.apply(null, n) : e._q.push(n);
+        }
+        var e = {
+          _q: [],
+          _h: null,
+          _v: "2.0",
+          on: function () {
+            i(["on", c.call(arguments)]);
+          },
+          once: function () {
+            i(["once", c.call(arguments)]);
+          },
+          off: function () {
+            i(["off", c.call(arguments)]);
+          },
+          get: function () {
+            if (!e._h)
+              throw new Error(
+                "[OpenWidget] You can't use getters before load."
+              );
+            return i(["get", c.call(arguments)]);
+          },
+          call: function () {
+            i(["call", c.call(arguments)]);
+          },
+          init: function () {
+            var n = t.createElement("script");
+            (n.async = !0),
+              (n.type = "text/javascript"),
+              (n.src = "https://cdn.openwidget.com/openwidget.js"),
+              t.head.appendChild(n);
+          },
+        };
+        !n.__ow.asyncInit && e.init(), (n.OpenWidget = n.OpenWidget || e);
+      })(window, document, [].slice);
+    </script>
+    <noscript
+      >You need to
+      <a
+        href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/"
+        rel="noopener nofollow"
+        >enable JavaScript</a
+      >
+      in order to use the AI chatbot tool powered by
+      <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank"
+        >ChatBot</a
+      ></noscript
+    >
+    <!-- End of ChatBot code -->
+  </body>
+</html>
