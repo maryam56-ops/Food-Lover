@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>العلماء</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(
+            rgba(29, 34, 37, 0.696),
+            rgba(0, 0, 0, 0.315)
+          ),
+          url(/img/home_bg.png);
+        background-position: center;
+        background-size: cover;
+        direction: rtl;
+      }
+      .container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 1000px;
+        padding: 90px;
+      }
+      .box {
+        width: 1000px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a23a4ad5;
+        color: #fff;
+        font-size: 42px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+      }
+      .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="/scientist-folder/ibn_sena.html" class="box">ابن سيناء</a>
+      <a href="/scientist-folder/khawarizmy.html" class="box">الخوارزمي</a>
+      <a href="/scientist-folder/Bairony.html" class="box">البيروني</a>
+      <a href="/scientist-folder/omar_alkhayam.html" class="box">عمر الخيام</a>
+      <a href="/scientist-folder/Ali_meshrefah.html" class="box"
+        >علي مصطفى مشرفة</a
+      >
+    </div>
+  </body>
+</html>
